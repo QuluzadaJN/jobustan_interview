@@ -1,0 +1,98 @@
+.interview{
+    &-card{
+        padding-top: 2rem;
+        color: $color-gray;
+
+        &__body{
+            margin-bottom: 7rem;
+        }
+
+        &__header{
+            display: flex;
+            min-height: 9.5rem;
+        }
+
+        &__image{
+            width: 60%;
+            padding-left: 3rem;
+        }
+
+        &__name{
+            width: 40%;
+            font-weight: normal;
+            &--main{
+                display: block;
+                color: $color-primary-dark;
+                font-size: 1.8rem;
+                margin-bottom: .6rem;
+            }
+            &--sub{
+                font-size: 1.3rem;
+            }
+        }
+
+        &__content{
+            font-size: 1.3rem;
+        }
+
+        &__buttons{
+            display: flex;
+            justify-content: space-between;
+            a{
+                border: 1px solid $color-primary-dark;
+                background-color: transparent;
+                color: $color-primary-dark!important;
+                padding: 1rem 5rem;
+                font-size: 1.3rem;
+                font-weight: 500;
+                border-radius: 1rem;
+                transition: all .3s linear;
+                &:link,
+                &:visited{
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+                &:hover{
+                    background-color: $color-primary-dark;
+                    color: $color-white!important;
+                    border: 1px solid transparent;
+                }
+            }
+        }
+
+        &__date{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.3rem;
+            
+            &_time{
+                i{
+                    margin-right: 1rem;
+                }
+            }
+        }
+
+        &__rejected{
+            text-align: center;
+            margin-bottom: 7rem;
+            min-height: 20rem;
+            display: none;
+
+            &_body{
+                font-size: 1.8rem;
+                font-weight: normal;
+                padding-top: 8rem;
+                text-align: center;
+
+                &--sub{
+                    display: block;
+                }
+                &--main{
+                    color: $color-primary-dark;
+                }
+            }
+        }
+    }
+}
